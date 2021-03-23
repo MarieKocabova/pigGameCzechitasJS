@@ -142,7 +142,7 @@ i {
 }
 
 .tlacitko-hod { 
-    top: 403px;
+    top: 380px;
     display: inline-block;
     color: #fff;
     text-align: center;
@@ -155,7 +155,7 @@ i {
 	outline: 0;
 }
 .tlacitko-hod:active {
-    box-shadow: 0px 2px 0px 0px #c5376d, 0px 5px 3px #999;
+    box-shadow: 0px 2px 0px 0px #f78db5, 0px 5px 3px #999;
 }
 
 .tlacitko-dost { 
@@ -170,6 +170,9 @@ i {
 	border-radius: 5px;
 	box-shadow: 0px 5px 0px 2px #f78db5, 0px 10px 5px #999;
 	outline: 0;
+}
+.tlacitko-dost:active {
+    box-shadow: 0px 2px 0px 0px #f78db5, 0px 5px 3px #999;
 }
 
 .kostka {
