@@ -31,6 +31,10 @@ document.querySelector('.tlacitko-hod').addEventListener('click', function() {
         kostkaDOM.style.display = 'block';
         kostkaDOM.textContent = kostka;
 
+        //zobrazit na obrázku kostky
+        let obrazekKostky = document.querySelector('.obrazek')
+        obrazekKostky.src = "obrazky100/" + kostka + ".jpg";
+
         //aktualizovat body kola pokud padla/nepadla 1
         if (kostka !==1) {
             //přičti body
@@ -50,6 +54,7 @@ document.querySelector('.tlacitko-dost').addEventListener('click', function() {
         //aktualizovat učivatelské prostředí
         document.querySelector('#body-' + aktivniHrac).textContent = body[aktivniHrac];
         document.querySelector('.kostka').style.display = 'none';
+        document.querySelector('.obrazek').src = "obrazky100/kostka.jpg"
 
         //Zkontrolovat zda hráč již vyhrál
         if (body[aktivniHrac] >= koncoveBody) {

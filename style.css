@@ -129,18 +129,57 @@ i {
     transition: margin 0.3s;
 }
 
-.tlacitko-novy { top: 45px;}
-.tlacitko-hod { top: 403px;}
-.tlacitko-dost { top: 467px;}
+.tlacitko-novy { top: 80px;}
+
+.obrazek {
+    position: absolute;
+    top:205px;
+    z-index: 1;
+    width: 100px;
+    left: 45%;
+    box-shadow: 0px 3px 3px 0px #999, 0px 20px 25px #999;
+    border-radius: 7px;
+}
+
+.tlacitko-hod { 
+    top: 403px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #E20089;
+    background-image: linear-gradient(bottom, #f78db5 0%, #ef5a92 100%);
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px 2px #f78db5, 0px 10px 5px #999;
+	outline: 0;
+}
+.tlacitko-hod:active {
+    box-shadow: 0px 2px 0px 0px #c5376d, 0px 5px 3px #999;
+}
+
+.tlacitko-dost { 
+    top: 467px;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 30px;
+    cursor: pointer;
+    background: #3E2983;
+    background-image: linear-gradient(bottom, #999 0%, #646464 100%);
+	border-radius: 5px;
+	box-shadow: 0px 5px 0px 2px #f78db5, 0px 10px 5px #999;
+	outline: 0;
+}
 
 .kostka {
     position: absolute;
     left: 50%;
-    top: 178px;
+    top: 180px;
     transform: translate(-50%, -50%);
     height: 100px;
     color: #e20089;
-    font-size: 100px;
+    font-size: 50px;
 }
 
 .vitez { background-color: #fde7f5; }
